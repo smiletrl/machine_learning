@@ -97,7 +97,7 @@ To separate "hardcore theory" from "engineering practice," the project is struct
 
 If you want to experience the thrill of running the code first, run:
 
-1. **Environment Setup:** Please ensure you have initialized the `uv` virtual environment and synced the dependencies as described in the [root repository](../README_en.md).
+1. **Environment Setup:** Please ensure you have initialized the `uv` virtual environment and synced the dependencies as described in the [root repository](../README_en.md#%EF%B8%8F-local-setup).
 2. **Run Training:**
    ```bash
    # Run the hand-crafted NumPy Mini-batch version
