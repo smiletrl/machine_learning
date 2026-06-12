@@ -20,7 +20,7 @@ Whether you are:
 
 Welcome to your **"Algorithm Arsenal"**.
 
-*Quick Teaser: A pure NumPy neural network built from scratch for handwritten digit recognition. Training 5 Epochs takes only 0.6 seconds, with accuracy soaring past 96%! 👉 [Click to see it in action](01_nn_from_scratch_mnist/README_en.md#quick-start)*
+*Quick Teaser: A pure NumPy neural network built from scratch for handwritten digit recognition. Training 5 Epochs takes only 0.6 seconds, with accuracy soaring past 96%! 👉 [Click to see it in action](01_nn_from_scratch_mnist/README_en.md#-quick-start)*
 
 ## 🛠️ Local Setup
 

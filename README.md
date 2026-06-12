@@ -20,7 +20,7 @@
 
 欢迎把这里当作你的**降维打击军火库**。
 
-*快速体验：纯手写 NumPy 神经网络，实现手写数字识别，5 个 Epoch，总耗时仅需 0.6 秒，准确率直飙 96%+！👉 [点击查看运行效果](01_nn_from_scratch_mnist/README.md#快速开始-quick-start)*
+*快速体验：纯手写 NumPy 神经网络，实现手写数字识别，5 个 Epoch，总耗时仅需 0.6 秒，准确率直飙 96%+！👉 [点击查看运行效果](01_nn_from_scratch_mnist/README.md#-快速开始-quick-start)*
 
 ## 🛠️ 本地开发环境 (Local Setup)
 
