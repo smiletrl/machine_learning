@@ -5,6 +5,8 @@
 > 面向机器学习入门：从网络结构、前向传播、交叉熵损失，到矩阵求导、链式法则、完整反向传播手推。
 > 不依赖框架黑盒，一步步拆解单层/多层神经网络数学原理，附维度校验 + Python 可运行伪代码。
 
+> 🚀 想要直接运行代码？ 本文对应的纯 NumPy 完整实现（包含单样本基础版与 Batch 批量实战版）已在 [../code](../code) 目录下就绪。请前往查看 [mnist_numpy.py](../code/mnist_numpy.py) 等可执行文件！
+
 适用人群：
 - 后端/全栈开发者，想补神经网络底层数学
 - 正在学习算法、深度学习、凸优化入门的同学
@@ -280,6 +282,8 @@ W2 -= alpha * dW2; b2 -= alpha * db2
 W1 -= alpha * dW1; b1 -= alpha * db1
 W0 -= alpha * dW0; b0 -= alpha * db0
 ```
+
+For the actual executable code, see [**`code/mnist_numpy.py`**](../code/mnist_numpy.py).
 
 ## 5. 补充完整推导（待更新）
 ### 5.1 Softmax + 交叉熵损失 合并求导完整证明

@@ -5,6 +5,8 @@
 > Targeted at Machine Learning beginners: From network architecture, forward propagation, and cross-entropy loss, to matrix calculus, the chain rule, and a complete hand-derived backpropagation.
 > Demystifying the math behind single/multi-layer neural networks step-by-step without relying on black-box frameworks. Includes dimensionality checks and executable Python pseudocode.
 
+> 🚀 **Want to run the code directly?** The complete pure NumPy implementation corresponding to this guide (including the basic single-sample version and the practical Mini-batch version) is ready in the [../code](../code) directory. Head over to check out executable scripts like [mnist_numpy.py](../code/mnist_numpy.py)!
+
 **Target Audience:**
 - Backend/Full-stack developers looking to bridge the gap in low-level neural network mathematics.
 - Students getting started with algorithms, deep learning, and convex optimization.
