@@ -39,28 +39,28 @@ def softmax(x):
 
 # 初始化权重和偏置 (维度严格对齐我们的手稿)
 W0 = np.random.randn(16, 784) * 0.01
-b1 = np.zeros((16, 1))
+b0 = np.zeros((16, 1))
 
 W1 = np.random.randn(15, 16) * 0.01
-b2 = np.zeros((15, 1))
+b1 = np.zeros((15, 1))
 
 W2 = np.random.randn(10, 15) * 0.01
-b3 = np.zeros((10, 1))
+b2 = np.zeros((10, 1))
 
 # ==========================================
 # 3. 核心前向与反向传播算法
 # ==========================================
 def train_step(X, Y_onehot, learning_rate=0.01):
-    global W0, b1, W1, b2, W2, b3
+    global W0, b0, W1, b1, W2, b2
     
     # --- 前向传播 ---
-    h1 = np.dot(W0, X) + b1
+    h1 = np.dot(W0, X) + b0
     a1 = relu(h1)
     
-    h2 = np.dot(W1, a1) + b2
+    h2 = np.dot(W1, a1) + b1
     a2 = relu(h2)
     
-    h3 = np.dot(W2, a2) + b3
+    h3 = np.dot(W2, a2) + b2
     p = softmax(h3)
     
     # 记录损失函数 (交叉熵)
@@ -69,23 +69,23 @@ def train_step(X, Y_onehot, learning_rate=0.01):
     # --- 反向传播 ---
     g3 = p - Y_onehot
     dW2 = np.dot(g3, a2.T)
-    db3 = g3
+    db2 = g3
     
     g2 = np.dot(W2.T, g3) * relu_deriv(h2)
     dW1 = np.dot(g2, a1.T)
-    db2 = g2
+    db1 = g2
     
     g1 = np.dot(W1.T, g2) * relu_deriv(h1)
     dW0 = np.dot(g1, X.T)
-    db1 = g1
+    db0 = g1
     
     # --- 参数更新 ---
     W2 -= learning_rate * dW2
-    b3 -= learning_rate * db3
-    W1 -= learning_rate * dW1
     b2 -= learning_rate * db2
-    W0 -= learning_rate * dW0
+    W1 -= learning_rate * dW1
     b1 -= learning_rate * db1
+    W0 -= learning_rate * dW0
+    b0 -= learning_rate * db0
     
     # 返回当前的损失，以及网络预测概率最高的那个数字
     predicted_digit = np.argmax(p) 
@@ -139,11 +139,11 @@ test_img = X_train[test_index]
 true_label = labels[test_index]
 
 # 走一遍前向传播
-h1 = np.dot(W0, test_img) + b1
+h1 = np.dot(W0, test_img) + b0
 a1 = relu(h1)
-h2 = np.dot(W1, a1) + b2
+h2 = np.dot(W1, a1) + b1
 a2 = relu(h2)
-h3 = np.dot(W2, a2) + b3
+h3 = np.dot(W2, a2) + b2
 p = softmax(h3)
 
 print(f"\n[考试时间] 我们随机抽取了第 {test_index} 张图片：")

@@ -41,59 +41,59 @@ def softmax(x):
 
 # 初始化权重 (784 -> 16 -> 15 -> 10)
 W0 = np.random.randn(16, 784) * 0.01  
-b1 = np.zeros((16, 1))
+b0 = np.zeros((16, 1))
 
 W1 = np.random.randn(15, 16) * 0.01
-b2 = np.zeros((15, 1))
+b1 = np.zeros((15, 1))
 
 W2 = np.random.randn(10, 15) * 0.01
-b3 = np.zeros((10, 1))
+b2 = np.zeros((10, 1))
 
 # ==========================================
 # 3. 核心算法 (前向、反向、以及纯前向的考试机制)
 # ==========================================
 def train_batch_step(X_batch, Y_batch, learning_rate):
     """训练机制：看题 -> 对答案 -> 纠正脑回路 (权重)"""
-    global W0, b1, W1, b2, W2, b3
+    global W0, b0, W1, b1, W2, b2
     batch_size = X_batch.shape[1]
     
     # 前向传播
-    h1 = np.dot(W0, X_batch) + b1
+    h1 = np.dot(W0, X_batch) + b0
     a1 = relu(h1)
-    h2 = np.dot(W1, a1) + b2
+    h2 = np.dot(W1, a1) + b1
     a2 = relu(h2)
-    h3 = np.dot(W2, a2) + b3
+    h3 = np.dot(W2, a2) + b2
     p = softmax(h3)
     
     # 反向传播
     g3 = p - Y_batch
     dW2 = np.dot(g3, a2.T) / batch_size   
-    db3 = np.sum(g3, axis=1, keepdims=True) / batch_size
+    db2 = np.sum(g3, axis=1, keepdims=True) / batch_size
     
     g2 = np.dot(W2.T, g3) * relu_deriv(h2)
     dW1 = np.dot(g2, a1.T) / batch_size   
-    db2 = np.sum(g2, axis=1, keepdims=True) / batch_size
+    db1 = np.sum(g2, axis=1, keepdims=True) / batch_size
     
     g1 = np.dot(W1.T, g2) * relu_deriv(h1)
     dW0 = np.dot(g1, X_batch.T) / batch_size 
-    db1 = np.sum(g1, axis=1, keepdims=True) / batch_size
+    db0 = np.sum(g1, axis=1, keepdims=True) / batch_size
     
     # 参数更新
     W2 -= learning_rate * dW2
-    b3 -= learning_rate * db3
-    W1 -= learning_rate * dW1
     b2 -= learning_rate * db2
-    W0 -= learning_rate * dW0
+    W1 -= learning_rate * dW1
     b1 -= learning_rate * db1
+    W0 -= learning_rate * dW0
+    b0 -= learning_rate * db0
 
 def evaluate(X, true_labels):
     """考试机制：只做题不看答案，不更新权重。测试真正的泛化能力。"""
     # 纯前向传播，让 10000 张图瞬间穿过网络
-    h1 = np.dot(W0, X) + b1
+    h1 = np.dot(W0, X) + b0
     a1 = relu(h1)
-    h2 = np.dot(W1, a1) + b2
+    h2 = np.dot(W1, a1) + b1
     a2 = relu(h2)
-    h3 = np.dot(W2, a2) + b3
+    h3 = np.dot(W2, a2) + b2
     p = softmax(h3)
     
     # 选出概率最大的那个数字作为预测结果
