@@ -95,12 +95,26 @@ To separate "hardcore theory" from "engineering practice," the project is struct
 
 ## 🚀 Quick Start
 
-If you want to experience the thrill of running the code first, head straight to the `code` directory:
+If you want to experience the thrill of running the code first, run:
 
-1. **Environment Setup:**
-   This project only relies on `numpy` (for low-level reproduction) and `torch` (for industrial benchmarking), plus `datasets` and `matplotlib` (for data downloading and visualization).
+1. **Environment Setup:** Please ensure you have initialized the `uv` virtual environment and synced the dependencies as described in the [root repository](../README_en.md).
 2. **Run Training:**
    ```bash
-   cd code
-   # Run the hand-crafted NumPy version validation
-   python train_real_mnist.py
+   # Run the hand-crafted NumPy Mini-batch version
+   python code/train_batch_mnist.py
+   ```
+
+Result:
+
+```bash
+% python code/train_batch_mnist.py
+正在加载数据集...
+正在准备期末考试卷(测试集)...
+
+=== 开始硬核实战 (Batch Size: 64) ===
+Epoch 1/5 | 耗时: 0.12秒 | 作业准确率(Train): 88.50% | 真实考试成绩(Test): 88.57%
+Epoch 2/5 | 耗时: 0.12秒 | 作业准确率(Train): 93.12% | 真实考试成绩(Test): 92.52%
+Epoch 3/5 | 耗时: 0.10秒 | 作业准确率(Train): 94.63% | 真实考试成绩(Test): 94.20%
+Epoch 4/5 | 耗时: 0.10秒 | 作业准确率(Train): 95.38% | 真实考试成绩(Test): 94.81%
+Epoch 5/5 | 耗时: 0.10秒 | 作业准确率(Train): 96.27% | 真实考试成绩(Test): 95.58%
+```

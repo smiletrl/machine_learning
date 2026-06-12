@@ -95,13 +95,25 @@
 
 ## 🚀 快速开始 (Quick Start)
 
-如果你想先感受代码跑通的快感，请直接进入 `code` 目录体验：
+如果你想先感受代码跑通的快感，请直接运行:
 
-1. **环境准备**：
-   本项目仅依赖 `numpy`（用于底层复现）和 `torch`（用于工业对照），以及 `datasets` 和 `matplotlib`（用于数据下载与可视化）。
+1. **环境准备**：请确保已按照 [主项目根目录](../README.md) 的说明，使用 `uv` 初始化好本地虚拟环境并同步了依赖。
 2. **运行训练**：
    ```bash
-   cd code
-   # 运行手工打造的 NumPy 版本验证
-   python train_real_mnist.py
+   # 运行手工打造的 NumPy 批量实战版
+   python code/train_batch_mnist.py
    ```
+结果
+
+```bash
+% python code/train_batch_mnist.py
+正在加载数据集...
+正在准备期末考试卷(测试集)...
+
+=== 开始硬核实战 (Batch Size: 64) ===
+Epoch 1/5 | 耗时: 0.12秒 | 作业准确率(Train): 88.50% | 真实考试成绩(Test): 88.57%
+Epoch 2/5 | 耗时: 0.12秒 | 作业准确率(Train): 93.12% | 真实考试成绩(Test): 92.52%
+Epoch 3/5 | 耗时: 0.10秒 | 作业准确率(Train): 94.63% | 真实考试成绩(Test): 94.20%
+Epoch 4/5 | 耗时: 0.10秒 | 作业准确率(Train): 95.38% | 真实考试成绩(Test): 94.81%
+Epoch 5/5 | 耗时: 0.10秒 | 作业准确率(Train): 96.27% | 真实考试成绩(Test): 95.58%
+```
