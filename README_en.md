@@ -18,7 +18,7 @@ Whether you are:
 - 💻 **A software engineer** looking to pivot into AI and needing to solidify your algorithmic foundation.
 - 🚀 **A geek** tired of just "importing libraries", who wants to truly understand the core mechanics and build real-world applications.
 
-Welcome to your **"Algorithm Arsenal"**.
+Welcome to your **Algorithm Arsenal**.
 
 ## 🛠️ Local Setup
 
