@@ -283,7 +283,7 @@ W0 -= alpha * dW0; b0 -= alpha * db0
 
 ## 5. 补充完整推导（待更新）
 ### 5.1 Softmax + 交叉熵损失 合并求导完整证明
-证明：$\displaystyle \frac{\partial L}{\partial h_3} = p - y$
+证明： $\displaystyle \frac{\partial L}{\partial h_3} = p - y$
 
 ### 5.2 ReLU 激活函数导数详解
 ### 5.3 批量样本(Batch)拓展推导（工程实战常用）
