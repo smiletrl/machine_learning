@@ -20,7 +20,7 @@
 
 欢迎把这里当作你的 AI 底层算法实战沙盒。
 
-*快速体验：纯手写 NumPy 神经网络，实现手写数字识别，5 个 Epoch，总耗时仅需 0.6 秒，准确率直飙 96%+！👉 [点击查看运行效果](01_nn_from_scratch_mnist/README.md#-快速开始-quick-start)*
+*快速体验：你可以通过 [公式推导手册](01_nn_from_scratch_mnist/docs/README.md) 彻底读懂神经网络底层的反向传播，并配合 [快速开始指南](01_nn_from_scratch_mnist/README.md#快速开始-quick-start) 亲手跑通纯 NumPy 的神经网络。5 个 Epoch 训练总耗时仅需 0.6 秒，准确率直飙 96%+！*
 
 ## 🛠️ 本地开发环境 (Local Setup)
 

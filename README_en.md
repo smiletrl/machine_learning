@@ -20,7 +20,7 @@ Whether you are:
 
 Welcome to your AI core algorithm practice sandbox.
 
-*Quick Teaser: A pure NumPy neural network built from scratch for handwritten digit recognition. Training 5 Epochs takes only 0.6 seconds, with accuracy soaring past 96%! 👉 [Click to see it in action](01_nn_from_scratch_mnist/README_en.md#-quick-start)*
+*Quick Teaser: You can thoroughly master the low-level backpropagation of neural networks via the [Formula Derivation Guide](01_nn_from_scratch_mnist/docs/README_en.md), and get your hands dirty by running the pure NumPy neural network following the [Quick Start Guide](01_nn_from_scratch_mnist/README_en.md#quick-start). Training 5 Epochs takes only 0.6 seconds, with accuracy soaring past 96%!*
 
 ## 🛠️ Local Setup
 
