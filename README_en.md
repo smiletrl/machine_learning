@@ -2,7 +2,7 @@
 
 [English](./README_en.md) | [简体中文](./README.md)
 
-> **Demystifying the black box of Deep Learning and Core Algorithms.**
+> **Demystifying the black box of Machine Learning and Core Algorithms.**
 
 ## 📖 About This Repository
 
