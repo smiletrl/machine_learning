@@ -67,7 +67,7 @@ Assuming the input image is flattened into a column vector $x$, the network cons
   - Probability formula: $p_i = \frac{e^{h_{3,i}}}{\sum_{k=1}^{10} e^{h_{3,k}}}$
   - Parameter dimensions: $W_2$ is $(10 \times 15)$, $b_2$ is $(10 \times 1)$, $p$ is $(10 \times 1)$
 
-*Note: The mathematical definition of the ReLU activation function used in the hidden layers is $\text{ReLU}(h) = \max(0, h)$. This operation applies independently to each element in the vector (i.e., if an element is less than 0, it is set to 0; if greater than 0, it remains unchanged). Note that ReLU is mathematically non-differentiable at $h=0$. In engineering implementations, the concept of a subgradient is usually applied, artificially assigning its derivative at $h=0$ to either 0 or 1 (assigned to 0 in this code implementation).*
+Note: The mathematical definition of the ReLU activation function used in the hidden layers is $\text{ReLU}(h) = \max(0, h)$. This operation applies independently to each element in the vector (i.e., if an element is less than 0, it is set to 0; if greater than 0, it remains unchanged). Note that ReLU is mathematically non-differentiable at $h=0$. In engineering implementations, the concept of a subgradient is usually applied, artificially assigning its derivative at $h=0$ to either 0 or 1 (assigned to 0 in this code implementation).
 
 *To simplify the derivation, a smaller number of neurons (16 and 15) is used for the hidden layers. In real-world applications, this can be scaled up to 128 or 256.*
 
@@ -78,7 +78,7 @@ $$
 L = -\sum_{k=1}^{10} y_k \ln(p_k)
 $$
 
-*Note: $y$ is the One-Hot column vector of the true label, with dimension $(10 \times 1)$. If the correct class is $c$, then $y_c = 1$, and the rest $y_{i \neq c} = 0$.*
+Note: $y$ is the One-Hot column vector of the true label, with dimension $(10 \times 1)$. If the correct class is $c$, then $y_c = 1$, and the rest $y_{i \neq c} = 0$.
 
 ## 3. Backward Propagation
 The core logic of backpropagation is divided into two steps: first, calculating the error transmission between nodes (node gradient $g$), and then using the node gradients to calculate the updates for the weights and biases of that layer.
