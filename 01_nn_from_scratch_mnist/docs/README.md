@@ -283,7 +283,7 @@ W1 -= alpha * dW1; b1 -= alpha * db1
 W0 -= alpha * dW0; b0 -= alpha * db0
 ```
 
-实际运行代码，见 [**`code/mnist_numpy.py`**](../code/mnist_numpy.py).
+实际运行代码，见 [**`code/mnist_numpy.py`**](../code/mnist_numpy.py)。
 
 ## 5. 补充完整推导（待更新）
 ### 5.1 Softmax + 交叉熵损失 合并求导完整证明
