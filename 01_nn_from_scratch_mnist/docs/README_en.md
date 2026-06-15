@@ -77,10 +77,7 @@ $$
 
 Note: $y$ is the One-Hot column vector of the true label, with dimension $(10 \times 1)$. If the correct class is $c$, then $y_c = 1$, and the rest $y_{i \neq c} = 0$.
 
-## 3. Backward Propagation
-The core logic of backpropagation is divided into two steps: first, calculating the error transmission between nodes (node gradient $g$), and then using the node gradients to calculate the updates for the weights and biases of that layer.
-
-### Supplement: Two Universal Laws of Neural Network Backpropagation
+## 3. Two Universal Laws of Neural Network Backpropagation
 
 In neural networks, the most core computations alternate between adjacent layers: **Linear Transformations** and **Activation Functions**. We can distill the formulas for these two operations into a highly symmetrical forward-backward contrast format. (Define $g$ as the gradient of the loss function $L$ with respect to the current variable).
 
@@ -150,7 +147,10 @@ $$
 
 *Once you master these two universal laws, the complex derivations for the subsequent hidden layers are simply alternating combinations of these two formulas! -- Detailed derivations to be updated.*
 
-### 3.1 Output Layer Gradients
+## 4. Backward Propagation
+The core logic of backpropagation is divided into two steps: first, calculating the error transmission between nodes (node gradient $g$), and then using the node gradients to calculate the updates for the weights and biases of that layer.
+
+### 4.1 Output Layer Gradients
 Calculate the derivative of the loss $L$ with respect to the output layer's pre-activation value $h_3$, denoted as $g_3$. Mathematically, $g_3 = \left( \frac{\partial p}{\partial h_3} \right)^T \frac{\partial L}{\partial p}$. Through the chain rule derivation combining Cross-Entropy and Softmax, we get an extremely simple subtraction form:
 
 $$
@@ -173,7 +173,7 @@ $$
 
 - Dimension check: $\frac{\partial L}{\partial W_2} = (10 \times 1) \times (1 \times 15) = (10 \times 15)$, perfectly matching the original dimension of $W_2$.
 
-### 3.2 Hidden Layer 2 Gradients
+### 4.2 Hidden Layer 2 Gradients
 The error propagates from $h_3$ back to $h_2$. It needs to be multiplied by the transpose of the weight matrix and pass through the ReLU activation function (using element-wise multiplication $\odot$):
 
 $$
@@ -195,7 +195,7 @@ $$
 
 - Dimension check: $\frac{\partial L}{\partial W_1} = (15 \times 1) \times (1 \times 16) = (15 \times 16)$, perfectly matching the original dimension of $W_1$.
 
-### 3.3 Hidden Layer 1 Gradients
+### 4.3 Hidden Layer 1 Gradients
 Similarly, the error propagates from $h_2$ back to $h_1$:
 
 $$
@@ -216,7 +216,7 @@ $$
 
 - Dimension check: $\frac{\partial L}{\partial W_0} = (16 \times 1) \times (1 \times 784) = (16 \times 784)$, perfectly matching the original dimension of $W_0$.
 
-## 4. Parameter Update
+## 5. Parameter Update
 Using the collected gradients, update all weights and biases synchronously using the learning rate $\alpha$ (Gradient Descent):
 
 $$
@@ -279,16 +279,16 @@ W0 -= alpha * dW0; b0 -= alpha * db0
 
 ```
 
-## 5. Complete Derivations (To be updated)
-### 5.1 Complete Proof of Combined Derivative for Softmax + Cross-Entropy Loss
+## 6. Complete Derivations (To be updated)
+### 6.1 Complete Proof of Combined Derivative for Softmax + Cross-Entropy Loss
 Proof: $\displaystyle \frac{\partial L}{\partial h_3} = p - y$
 
-### 5.2 Detailed Explanation of the ReLU Activation Function Derivative
+### 6.2 Detailed Explanation of the ReLU Activation Function Derivative
 
-### 5.3 Batch Sample Extension Derivation (Common in Engineering Practice)
+### 6.3 Batch Sample Extension Derivation (Common in Engineering Practice)
 This document provides the derivation for a **single sample**. In actual training, batch data is used, which introduces means and dimensional broadcasting. Batch version formulas will be supplemented later.
 
-## 6. Extended Learning Path
+## 7. Extended Learning Path
 Building upon this derivation, here are directions for extended learning:
 1. Convex Optimization Basics (Advanced gradient descent, constrained optimization)
 2. Backpropagation for various activation functions (Sigmoid/Tanh)
