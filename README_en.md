@@ -40,12 +40,14 @@ source .venv/bin/activate
 
 ## 🗂️ Projects Index
 
-| No. | Project Name | Core Technologies | Status | Video Tutorial |
-| :--- | :--- | :--- | :--- | :--- |
-| 01 | [Neural Network From Scratch (MNIST)](./01_nn_from_scratch_mnist) | MNIST, NumPy Backprop | 🟢 Done | [Coming Soon]() |
-| 02 | [Classic Machine Learning Core Algorithms](#) | Decision Trees, SVM, K-Means, PCA | 🟡 Planned | - |
-| 03 | [Convex Optimization in Practice](#) | Gradient Descent, Duality, Loss Surfaces | 🟡 Planned | - |
-| 04 | [Transformer Architecture Demystified](#) | Self-Attention, Positional Encoding | 🟡 Planned | - |
+📺 **Full step-by-step mathematical derivation and tutorial videos are available on Xiaohongshu (小红书) & Douyin (抖音). Account: @清影 Labs**
+
+| No. | Project Name | Core Technologies | Status |
+| :--- | :--- | :--- | :--- |
+| 01 | [Neural Network From Scratch (MNIST)](./01_nn_from_scratch_mnist) | MNIST, NumPy Backprop | 🟢 Done |
+| 02 | [Classic Machine Learning Core Algorithms](#) | Decision Trees, SVM, K-Means, PCA | 🟡 Planned |
+| 03 | [Convex Optimization in Practice](#) | Gradient Descent, Duality, Loss Surfaces | 🟡 Planned |
+| 04 | [Transformer Architecture Demystified](#) | Self-Attention, Positional Encoding | 🟡 Planned |
 
 ---
 *Follow my journey from traditional engineering to hardcore AI algorithms. Give it a ⭐️ if it inspires you!*

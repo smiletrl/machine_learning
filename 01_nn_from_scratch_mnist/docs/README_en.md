@@ -12,9 +12,6 @@
 - Students getting started with algorithms, deep learning, and convex optimization.
 - Job seekers preparing for interviews involving neural network derivations and gradient-based algorithm questions.
 
-## Video Resources
-Resources to be updated.
-
 ## Reading Guide
 If you are a beginner, it is recommended to read the "Prerequisites" first to ensure you have the foundational knowledge, then refer to the "Notation Cheat Sheet" to understand the dimensionality of each formula. For the derivation part, focus on mastering the "Universal Laws" before applying them layer by layer. For code implementation, you can refer to the pseudocode at the end.
 
