@@ -40,7 +40,7 @@ source .venv/bin/activate
 
 ## 🗂️ Projects Index
 
-📺 **Full step-by-step mathematical derivation and tutorial videos are available on Xiaohongshu (小红书) & Douyin (抖音). Account: @清影 Labs**
+📺 **Full step-by-step mathematical derivation and tutorial videos are available on Xiaohongshu (小红书) & Douyin (抖音). Account: @清影Labs**
 
 | No. | Project Name | Core Technologies | Status |
 | :--- | :--- | :--- | :--- |
