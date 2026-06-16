@@ -18,3 +18,5 @@
 | 2 | `mnist_numpy.py` | 模拟单样本学习 | 使用 NumPy 模拟，适合理解基础原理 |
 | 3 | `train_real_mnist.py` | 真实数据全集的单样本学习 | 在完整数据集上训练单样本模型 |
 | 4 | `train_batch_mnist.py` | 真实数据集的批量学习 | 支持批量训练 + 测试集验证 |
+| 5 | `pytorch_mnist.py` | 基于深度学习框架的实现 | 引入 PyTorch，利用自动微分与内置优化器，代码更简洁高效 |
+
