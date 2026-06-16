@@ -18,3 +18,4 @@ It is highly recommended to browse and execute the files in the following order:
 | 2 | `mnist_numpy.py` | Simulated single-sample training | Pure NumPy implementation, perfect for grasping the core mathematical principles |
 | 3 | `train_real_mnist.py` | Single-sample training on real data | Trains the model on the complete, real MNIST dataset (item by item) |
 | 4 | `train_batch_mnist.py` | Mini-batch training on real data | Supports mini-batch matrix acceleration + test set validation |
+| 5 | `pytorch_mnist.py` | Deep learning framework implementation | Introduces PyTorch, leveraging automatic differentiation and built-in optimizers for concise and efficient code |
