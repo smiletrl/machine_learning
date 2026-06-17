@@ -6,9 +6,9 @@
 
 ## 📖 About This Repository
 
-This repository documents my transition from traditional backend development (Golang/Node.js) into AI, serving as a **practical library for core algorithms and low-level derivations**.
+This repository is a practical sandbox where a Senior Backend Architect explores the low-level computational mechanics of AI through a systems engineering lens.
 
-Facing the current AI landscape where "theory is obscure, but coding is just calling APIs," I decided to return to the code itself, building a **"Progressive"** practical system for every core algorithm:
+Facing the current AI landscape where "theory is obscure, and coding is just calling APIs," I decided to follow my instinct as an infrastructure engineer: strip away the frameworks and return to the bare essence of code and mathematics. This project provides a "tiered" learning and validation system for core algorithms:
 
 1. **Demystifying the Black Box (Pure NumPy):** Ditching all AI frameworks to manually derive matrix calculus and reverse-engineer the math with low-level code, proving that complex formulas are just paper tigers.
 2. **Industrial Benchmarking (Modern AI Frameworks):** After mastering the low-level mechanics, I provide equivalent implementations using PyTorch and other industrial-grade frameworks to ensure robust performance in real-world production environments.
@@ -50,4 +50,4 @@ source .venv/bin/activate
 | 04 | [Transformer Architecture Demystified](#) | Self-Attention, Positional Encoding | 🟡 Planned |
 
 ---
-*Follow my journey from traditional engineering to hardcore AI algorithms. Give it a ⭐️ if it inspires you!*
+*Follow my journey bridging high-performance backend engineering with hardcore AI computation. Give it a ⭐️ if it inspires you!*

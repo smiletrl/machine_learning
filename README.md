@@ -6,9 +6,9 @@
 
 ## 📖 关于这个仓库
 
-这是我从传统服务端开发（Golang/Node.js）跨界 AI 领域的**核心算法与推导实战库**。
+这是一个**资深后端架构师以系统工程视角探索 AI 底层计算机制**的实战沙盒。
 
-面对“理论晦涩难懂，代码全靠调包”的 AI 现状，我决定回归代码本身，为每个核心算法打造 **“分层式”** 学习与实战体系：
+面对当前“理论晦涩难懂，代码全靠调包”的 AI 学习现状，我决定发挥底层架构工程师的本能——**扒开框架，回归代码与数学本质**。本项目旨在提供一套“分层式”的学习与验证体系：
 
 1. **手撕底层黑盒 (纯 NumPy)**：脱离任何 AI 框架，手推矩阵求导，用底层代码还原数学逻辑，证明高深公式不过是纸老虎。
 2. **对标工业生产 (主流 AI 框架)**：吃透底层后，提供 PyTorch 等现代工业级框架的对照实现，确保在真实生产环境里能打能抗。
@@ -50,4 +50,4 @@ source .venv/bin/activate
 | 04 | [大模型 Transformer 底层架构剖析 (规划中)](#) | 自注意力机制, 位置编码, 矩阵分块 | 🟡 规划中 |
 
 ---
-*Follow my journey from traditional engineering to hardcore AI algorithms. Give it a ⭐️ if it inspires you!*
+*Follow my journey bridging high-performance backend engineering with hardcore AI computation. Give it a ⭐️ if it inspires you!*
