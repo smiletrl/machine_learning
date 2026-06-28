@@ -45,9 +45,10 @@ source .venv/bin/activate
 | 编号 | 项目名称 | 核心技术点 | 状态 |
 | :--- | :--- | :--- | :--- |
 | 01 | [从零手撕神经网络 (MNIST 手写数字识别)](./01_nn_from_scratch_mnist) | MNIST 识别实战, NumPy 手推反向传播 | 🟢 已完成 |
-| 02 | [经典机器学习核心算法纯手写 (规划中)](#) | 决策树, SVM, K-Means, 降维理论 | 🟡 规划中 |
-| 03 | [凸优化理论与代码实战 (规划中)](#) | 梯度下降, 拉格朗日对偶, 损失曲面 | 🟡 规划中 |
-| 04 | [大模型 Transformer 底层架构剖析 (规划中)](#) | 自注意力机制, 位置编码, 矩阵分块 | 🟡 规划中 |
+| 02 | [主成分分析 (PCA)：从纯代数推导到 SVD 工业级实现](./02_pca_math_to_svd) | SVD 等价性证明, 数值稳定性, Numpy 白盒复现 | 🟢 已完成 |
+| 03 | [经典机器学习算法核心破壁 (持续更新)](#) | 决策树, SVM, K-Means 核心逻辑手推 | 🟡 规划中 |
+| 04 | [凸优化理论与代码实战 (规划中)](#) | 梯度下降, 拉格朗日对偶, 损失曲面 | 🟡 规划中 |
+| 05 | [大模型 Transformer 底层架构剖析 (规划中)](#) | 自注意力机制, 位置编码, 矩阵分块 | 🟡 规划中 |
 
 ---
 *Follow my journey bridging high-performance backend engineering with hardcore AI computation. Give it a ⭐️ if it inspires you!*

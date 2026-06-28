@@ -40,14 +40,15 @@ source .venv/bin/activate
 
 ## 🗂️ Projects Index
 
-📺 **Full step-by-step mathematical derivation and tutorial videos are available on Xiaohongshu (小红书) & Douyin (抖音). Account: @清影Labs**
+📺 **Step-by-step mathematical derivations and video tutorials are available on Xiaohongshu (小红书) & Douyin (抖音). Account: @清影Labs**
 
 | No. | Project Name | Core Technologies | Status |
 | :--- | :--- | :--- | :--- |
-| 01 | [Neural Network From Scratch (MNIST)](./01_nn_from_scratch_mnist) | MNIST, NumPy Backprop | 🟢 Done |
-| 02 | [Classic Machine Learning Core Algorithms](#) | Decision Trees, SVM, K-Means, PCA | 🟡 Planned |
-| 03 | [Convex Optimization in Practice](#) | Gradient Descent, Duality, Loss Surfaces | 🟡 Planned |
-| 04 | [Transformer Architecture Demystified](#) | Self-Attention, Positional Encoding | 🟡 Planned |
+| 01 | [Neural Network From Scratch (MNIST)](./01_nn_from_scratch_mnist) | MNIST, NumPy Backpropagation | 🟢 Done |
+| 02 | [PCA Deep Dive: Algebraic Proofs to Industrial SVD](./02_pca_math_to_svd) | SVD Equivalence, Numerical Stability, NumPy Whitebox | 🟢 Done |
+| 03 | [Classic ML Algorithms Demystified](#) | Decision Trees, SVM, K-Means Core Logic | 🟡 Planned |
+| 04 | [Convex Optimization in Practice](#) | Gradient Descent, Duality, Loss Surfaces | 🟡 Planned |
+| 05 | [Transformer Architecture Unveiled](#) | Self-Attention, Positional Encoding, Block Matrix | 🟡 Planned |
 
 ---
 *Follow my journey bridging high-performance backend engineering with hardcore AI computation. Give it a ⭐️ if it inspires you!*
