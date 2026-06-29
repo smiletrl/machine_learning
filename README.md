@@ -37,18 +37,18 @@ uv sync
 # 3. 激活当前项目的虚拟环境
 source .venv/bin/activate
 ```
-
 ## 🗂️ 项目索引 (Projects)
 
 📺 **完整逐层公式推导讲解视频，请关注小红书 & 抖音平台，账号：@清影Labs。**
 
-| 编号 | 项目名称 | 核心技术点 | 状态 |
-| :--- | :--- | :--- | :--- |
-| 01 | [从零手撕神经网络 (MNIST 手写数字识别)](./01_nn_from_scratch_mnist) | MNIST 识别实战, NumPy 手推反向传播 | 🟢 已完成 |
-| 02 | [主成分分析 (PCA)：从纯代数推导到 SVD 工业级实现](./02_pca_math_to_svd) | SVD 等价性证明, 数值稳定性, Numpy 白盒复现 | 🟢 已完成 |
-| 03 | [经典机器学习算法核心破壁 (持续更新)](#) | 决策树, SVM, K-Means 核心逻辑手推 | 🟡 规划中 |
-| 04 | [凸优化理论与代码实战 (规划中)](#) | 梯度下降, 拉格朗日对偶, 损失曲面 | 🟡 规划中 |
-| 05 | [大模型 Transformer 底层架构剖析 (规划中)](#) | 自注意力机制, 位置编码, 矩阵分块 | 🟡 规划中 |
+| 编号 | 项目名称 | 核心技术点 | 状态 | 
+| ----- | ----- | ----- | ----- | 
+| 01 | [从零手撕神经网络 (MNIST 手写数字识别)](./01_nn_from_scratch_mnist) | MNIST 识别实战, NumPy 手推反向传播 | 🟢 已完成 | 
+| 02 | [主成分分析 (PCA)：从纯代数推导到 SVD 工业级实现](./02_pca_math_to_svd) | SVD 等价性证明, 数值稳定性, Numpy 白盒复现 | 🟢 已完成 | 
+| 03 | [短视频推荐系统：从底层推导到工业落地](./03_short_video_recommendation) | 纯 NumPy 手撕 Attention, 双塔召回, 负采样, 序列建模 | 🔥 研发中 | 
+| 04 | [经典机器学习算法核心破壁 (持续更新)](#) | 决策树, SVM, K-Means 核心逻辑手推 | 🟡 规划中 | 
+| 05 | [凸优化理论与代码实战 (规划中)](#) | 梯度下降, 拉格朗日对偶, 损失曲面 | 🟡 规划中 | 
+| 06 | [大模型 Transformer 底层架构剖析 (规划中)](#) | 自注意力机制, 位置编码, 矩阵分块 | 🟡 规划中 | 
 
 ---
 *Follow my journey bridging high-performance backend engineering with hardcore AI computation. Give it a ⭐️ if it inspires you!*

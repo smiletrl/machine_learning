@@ -42,13 +42,13 @@ source .venv/bin/activate
 
 📺 **Step-by-step mathematical derivations and video tutorials are available on Xiaohongshu (小红书) & Douyin (抖音). Account: @清影Labs**
 
-| No. | Project Name | Core Technologies | Status |
-| :--- | :--- | :--- | :--- |
-| 01 | [Neural Network From Scratch (MNIST)](./01_nn_from_scratch_mnist) | MNIST, NumPy Backpropagation | 🟢 Done |
-| 02 | [PCA Deep Dive: Algebraic Proofs to Industrial SVD](./02_pca_math_to_svd) | SVD Equivalence, Numerical Stability, NumPy Whitebox | 🟢 Done |
-| 03 | [Classic ML Algorithms Demystified](#) | Decision Trees, SVM, K-Means Core Logic | 🟡 Planned |
-| 04 | [Convex Optimization in Practice](#) | Gradient Descent, Duality, Loss Surfaces | 🟡 Planned |
-| 05 | [Transformer Architecture Unveiled](#) | Self-Attention, Positional Encoding, Block Matrix | 🟡 Planned |
+| No. | Project Name | Core Technologies | Status | 
+| ----- | ----- | ----- | ----- | 
+| 01 | [Neural Network From Scratch (MNIST)](./01_nn_from_scratch_mnist) | MNIST, NumPy Backpropagation | 🟢 Done | 
+| 02 | [PCA Deep Dive: Algebraic Proofs to Industrial SVD](./02_pca_math_to_svd) | SVD Equivalence, Numerical Stability, NumPy Whitebox | 🟢 Done | 
+| 03 | [Short Video RecSys: From Scratch to Industry](./03_short_video_recommendation) | Pure NumPy Attention, Two-Tower Retrieval, Negative Sampling, Sequential Modeling | 🔥 In Progress | 
+| 04 | [Classic ML Algorithms Demystified](#) | Decision Trees, SVM, K-Means Core Logic | 🟡 Planned | 
+| 05 | [Convex Optimization in Practice](#) | Gradient Descent, Duality, Loss Surfaces | 🟡 Planned | 
+| 06 | [Transformer Architecture Unveiled](#) | Self-Attention, Positional Encoding, Block Matrix | 🟡 Planned | 
 
----
 *Follow my journey bridging high-performance backend engineering with hardcore AI computation. Give it a ⭐️ if it inspires you!*
