@@ -71,7 +71,7 @@
 ## 💻 Repo 目录结构规划
 
 ```text
-06_short_video_recommendation/
+03_short_video_recommendation/
 ├── utils/                       # 核心工程地基
 │   ├── metrics.py               # 评估指标：Recall@K, NDCG@K
 │   └── checkpoint.py            # 权重持久化：基于 np.savez 的模型存取
